@@ -6,7 +6,7 @@ ${Baseurl}    http://10.100.20.34:9190/web/guest/asquote
 ${Prospername}    John
 ${MobileNumber}  9442189256
 ${EmailID}    qcteam1@xerago.mail
-${Lastname}    Mike
+${Lastname}    Win
 
 *** Keywords ***
 Jenkins browser launch
