@@ -92,7 +92,7 @@ Click the Proceed button in model pop
 *** Test Cases ***
 2 Adult STP-Sum Insured 2 lakhs
     [Documentation]    Sum Insured 2 lakhs
-    Local browser launch
+    Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
     Proposer DOB
@@ -112,7 +112,7 @@ Click the Proceed button in model pop
     
 2 Adult NON-STP-Sum Insured 3 lakhs
     [Documentation]    Sum Insured 3 lakhs
-    Local browser launch
+    Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
     Proposer DOB
@@ -132,7 +132,7 @@ Click the Proceed button in model pop
     
 2 Adult STP-Proposer Age 36
     [Documentation]    Proposer Age-30
-    Local browser launch
+    Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
     Proposer DOB
@@ -152,7 +152,7 @@ Click the Proceed button in model pop
     
 2 Adult NON-STP-Proposer Age 36
     [Documentation]    Medical Question is Yes
-    Local browser launch
+    Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
     Proposer DOB
