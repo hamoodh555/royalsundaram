@@ -44,10 +44,16 @@ Select Second Adult
     Click Element   xpath=.//ul[@class='familylist adults']//li[2]
     
 Select First child
-    Click Element    xpath=.//ul[@class='familylist children']//li[1] 
+    Click Element    xpath=.//ul[@class='familylist children']//li[1]
+    
+Select Second child
+    Click Element    xpath=.//ul[@class='familylist children']//li[2] 
     
 Select Sum Insured for STP 2 lakh
     Click Element    xpath=.//div[@id='planyears']//ul//li[3]
+    
+Select Sum Insured for STP 1.5 lakh
+    Click Element    xpath=.//div[@id='planyears']//ul//li[2]
     
 Select Sum Insured for STP 3 lakh
     Click Element    xpath=.//div[@id='planyears']//ul//li[5]
@@ -77,7 +83,6 @@ Click the Proceed button in model pop
      Click Element    xpath=.//div[@class='modal-content']//button[@id='closeproceed']
    
 *** Test Cases ***
-
 
 2 Adult STP-Sum Insured 2 lakhs
     [Documentation]    Sum Insured 2 lakhs
@@ -240,6 +245,48 @@ Click the Proceed button in model pop
     Click the Proceed button in model pop
     Close Browser
     
+2 Adult and 2 Child NON-STP
+    # Local browser launch
+    Jenkins browser launch
+    Choose the Cover Type
+    Name of Proposer
+    Proposer DOB
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1953
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Proposer Mobile Number
+    Proposer email
+    Select Second Adult
+    Select Second child
+    Select Sum Insured for STP 1.5 lakh
+    Click the Continue button
+    Select From List By Label    xpath=.//div[@class='form-group citynameicn']//select[@id='relationShipProposer1']    Spouse
+    Input Text    id=prospername1    Maya
+    Click Element    id=eldestdate1
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1965
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the next button
+    Select From List By Label    insurerDetails[1][relationshipWithProposer]    Son
+    Input Text    id=prospername2    Insured Member Two  
+    Click Element    xpath=.//input[@id='eldestdate2']   
+    Select From List By Value    xpath=.//select[@class='ui-datepicker-year']    1997    
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')] 
+    Click the next button 
+    Sleep    3s 
+    Select From List By Label    insurerDetails[2][relationshipWithProposer]    Son 
+    Input Text    id=prospername3    Insured Member Three  
+    Click Element    xpath=.//input[@id='eldestdate3']   
+    Select From List By Value    xpath=.//select[@class='ui-datepicker-year']    2003    
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the next button 
+    Select From List By Label    insurerDetails[3][relationshipWithProposer]    Daughter 
+    Input Text    id=prospername4    Insured Member Four
+    Click Element    xpath=.//input[@id='eldestdate4']
+    Select From List By Value    xpath=.//select[@class='ui-datepicker-year']    2019 
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the Premium detail button
+    Click the proceed button in Premium Details Page
+    Click the Proceed button in model pop
+    Close Browser
 
     
     
