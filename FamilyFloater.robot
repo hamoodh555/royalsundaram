@@ -43,17 +43,26 @@ Proposer email
 Select Second Adult
     Click Element   xpath=.//ul[@class='familylist adults']//li[2]
     
+Select Third Adult
+    Click Element   xpath=.//ul[@class='familylist adults']//li[3]
+    
+Select Fourth Adult
+    Click Element   xpath=.//ul[@class='familylist adults']//li[4]
+    
 Select First child
     Click Element    xpath=.//ul[@class='familylist children']//li[1]
     
 Select Second child
     Click Element    xpath=.//ul[@class='familylist children']//li[2] 
-    
-Select Sum Insured for STP 2 lakh
-    Click Element    xpath=.//div[@id='planyears']//ul//li[3]
+        
+Select Sum Insured for STP 1 lakh
+    Click Element    xpath=.//div[@id='planyears']//ul//li[1]
     
 Select Sum Insured for STP 1.5 lakh
     Click Element    xpath=.//div[@id='planyears']//ul//li[2]
+    
+Select Sum Insured for STP 2 lakh
+    Click Element    xpath=.//div[@id='planyears']//ul//li[3]
     
 Select Sum Insured for STP 3 lakh
     Click Element    xpath=.//div[@id='planyears']//ul//li[5]
@@ -83,6 +92,64 @@ Click the Proceed button in model pop
      Click Element    xpath=.//div[@class='modal-content']//button[@id='closeproceed']
    
 *** Test Cases ***
+4 Adult STP
+    Local browser launch
+    Choose the Cover Type
+    Name of Proposer
+    Proposer DOB
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1993
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Proposer Mobile Number
+    Proposer email
+    Select Fourth Adult
+    Select Sum Insured for STP 1 lakh
+    Click the Continue button
+    Click the next button
+    Select From List By Label    insurerDetails[1][relationshipWithProposer]    Spouse 
+    Input Text    id=prospername2    Insured Member Two  
+    Click Element    xpath=.//input[@id='eldestdate2']   
+    Select From List By Value    xpath=.//select[@class='ui-datepicker-year']    1975      
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the next button
+    
+    
+    
+    
+
+3 Adult STP
+    Jenkins browser launch
+    Choose the Cover Type
+    Name of Proposer
+    Proposer DOB
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1952
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Proposer Mobile Number
+    Proposer email
+    Select Third Adult
+    Select Sum Insured for STP 2 lakh
+    Click the Continue button
+    Select From List By Label    xpath=.//div[@class='form-group citynameicn']//select[@id='relationShipProposer1']    Spouse
+    Input Text    id=prospername1    Maya
+    Click Element    id=eldestdate1
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1975
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the next button
+    Select From List By Label    xpath=.//div[@class='form-group citynameicn']//select[@id='relationShipProposer2']    Son
+    Input Text    id=prospername2    Kim
+    Click Element    id=eldestdate2
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1999
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the next button
+    Select From List By Label    xpath=.//div[@class='form-group citynameicn']//select[@id='relationShipProposer3']    Daughter
+    Input Text    id=prospername3    Niya
+    Click Element    id=eldestdate3
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    2002
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'22')]
+    Click the Premium detail button
+    Click the proceed button in Premium Details Page
+    Click the Proceed button in model pop
+    Close Browser
+    
 
 2 Adult STP-Sum Insured 2 lakhs
     [Documentation]    Sum Insured 2 lakhs
@@ -287,6 +354,8 @@ Click the Proceed button in model pop
     Click the proceed button in Premium Details Page
     Click the Proceed button in model pop
     Close Browser
+    
+
 
     
     
