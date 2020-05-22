@@ -93,7 +93,8 @@ Click the Proceed button in model pop
    
 *** Test Cases ***
 4 Adult STP
-    Local browser launch
+    # Local browser launch
+    Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
     Proposer DOB
