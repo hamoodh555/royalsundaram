@@ -77,7 +77,7 @@ Click the Proceed button in model pop
      Click Element    xpath=.//div[@class='modal-content']//button[@id='closeproceed']
    
 *** Test Cases ***
-   
+
 2 Adult STP-Sum Insured 2 lakhs
     [Documentation]    Sum Insured 2 lakhs
     Jenkins browser launch
@@ -207,6 +207,38 @@ Click the Proceed button in model pop
     Click the Proceed button in model pop
     Close Browser
     
+2 Adult and 1 Child with NON-STP
+    Local browser launch
+    Choose the Cover Type
+    Name of Proposer
+    Proposer DOB
+    Select From List By Value     xpath=.//select[@class='ui-datepicker-year']    1991
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'15')]
+    Proposer Mobile Number
+    Proposer email
+    Select Second Adult
+    Select First child
+    Select Sum Insured for STP 2 lakh
+    Click the Continue button
+    Click the next button
+    Select From List By Label    insurerDetails[1][relationshipWithProposer]    Mother
+    Input Text    id=prospername2    Insured Member Two  
+    Click Element    xpath=.//input[@id='eldestdate2']   
+    Select From List By Value    xpath=.//select[@class='ui-datepicker-year']    1979    
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'20')] 
+    Click the next button 
+    Sleep    5s 
+    Select From List By Label    insurerDetails[2][relationshipWithProposer]    Son 
+    Input Text    id=prospername3    Insured Member Three  
+    Click Element    xpath=.//input[@id='eldestdate3']   
+    Select From List By Label    xpath=.//select[@class='ui-datepicker-month']    Jan    
+    Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'15')]
+    Click the Premium detail button
+    Click the proceed button in Premium Details Page
+    Click the Proceed button in model pop
+    Close Browser
+    
+
     
     
     
