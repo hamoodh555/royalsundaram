@@ -78,6 +78,7 @@ Click the Proceed button in model pop
    
 *** Test Cases ***
 
+
 2 Adult STP-Sum Insured 2 lakhs
     [Documentation]    Sum Insured 2 lakhs
     Jenkins browser launch
@@ -208,7 +209,8 @@ Click the Proceed button in model pop
     Close Browser
     
 2 Adult and 1 Child with NON-STP
-    Local browser launch
+    # Local browser launch
+    Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
     Proposer DOB
