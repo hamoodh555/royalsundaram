@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ArogyaSanjeevani</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>FamilyFloater.robot</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FamilyFloater.robot</locationURI>
+		</link>
+		<link>
+			<name>Individual.robot</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Individual.robot</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
