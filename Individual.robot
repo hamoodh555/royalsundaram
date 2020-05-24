@@ -18,16 +18,16 @@ ${weight_val}     40
 
 *** Keywords ***
 Jenkins browser launch
-    Set Selenium Speed    1s
     ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${chrome_options}   add_argument    headless
     Call Method    ${chrome_options}   add_argument    disable-gpu
     Call Method    ${chrome_options}   add_argument    no-sandbox
     Create WebDriver  Chrome  chrome_options=${chrome_options}
-    SeleniumLibrary.Set Window Size    1000    700
+    #SeleniumLibrary.Set Window Size    1000    700
     Go To    ${Baseurl}
-    #Maximize Browser Window
+    Maximize Browser Window
     Set Browser Implicit Wait    15s
+    Set Selenium Speed    1s
     
 Local browser launch
     # Set Selenium Speed    1s
