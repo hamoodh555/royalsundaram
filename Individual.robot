@@ -24,7 +24,6 @@ Jenkins browser launch
     Call Method    ${chrome_options}   add_argument    disable-gpu
     Call Method    ${chrome_options}   add_argument    no-sandbox
     Create WebDriver  Chrome  chrome_options=${chrome_options}
-    SeleniumLibrary.Set Window Size    1920    1080
     Go To    ${Baseurl}
     #Maximize Browser Window
     Set Browser Implicit Wait    15s
@@ -89,6 +88,7 @@ Scroll down
     Input Text    xpath=.//ul[@id='insuredform-single']/li//div[@class='formfieldHolder']/div/div//input[@name='weight1']    ${weight_val}
     Click Element    id=insuredetailsubmit
     Click Element    xpath=.//ul[@id='medicalform-single']/li[1]//span/label[@for='consultedDoctorno']
+        SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 300)
     Click Element    xpath=.//ul[@id='medicalform-single']/li[2]//span/label[contains(.,'No')]
     SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 600)
     Click Element    xpath=.//ul[@id='medicalform-single']/li[3]//span/label[contains(.,'No')]
