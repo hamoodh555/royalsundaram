@@ -53,11 +53,11 @@ Scroll down
     Sleep    3s
     Scroll down
     Click Element    xpath=.//a[@id='familycombinationCont']
-    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Scroll down
     Click Element    xpath=.//a[@id='cityCont1']
-    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Scroll down
     Click Element    id=proceed
-    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Scroll down
     Click Element    id=closeproceed
     Scroll down
     Click Element    xpath=.//ul[@id='proposalform-single']/li//div[@class='formheader']/div/div[1]/p[contains(.,'Last Name')]
@@ -96,7 +96,7 @@ Scroll down
     Click Element    xpath=.//ul[@id='medicalform-single']/li[6]//span/label[contains(.,'No')]
     Scroll down
     Click Element    id=medicaldetailsubmit
-    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Scroll down
     Click Element    xpath=.//ul[@id='lifestyleform-single']/li[1]//span/label[@for='alcoholno']
     Click Element    xpath=.//ul[@id='lifestyleform-single']/li[4]//span/label[contains(.,'No')]
     Click Element    xpath=.//ul[@id='lifestyleform-single']/li[7]//span/label[contains(.,'No')]
@@ -114,7 +114,7 @@ Scroll down
     Click Element    xpath=//ul[@id='generaldetailsform-single']/li[4]/div[1]/div
     Select From List By Label    xpath=.//select[@class='ui-datepicker-year']    1993
     Click Element    xpath=.//table[@class='ui-datepicker-calendar']/tbody/tr/td/a[contains(.,'1')]
-    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Scroll down
     Click Element    xpath=.//ul[@id='generaldetailsform-single']/li[11]/div[1]/div
     Input Text    xpath=.//ul[@id='generaldetailsform-single']/li[11]/div[@class='formfieldHolder']//input    9687465423
     Click Element    id=generaldetailsubmit
