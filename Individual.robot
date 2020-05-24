@@ -91,6 +91,7 @@ Scroll down
     Click Element    xpath=.//ul[@id='medicalform-single']/li[2]//span/label[contains(.,'No')]
     SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 900)
     Click Element    xpath=.//ul[@id='medicalform-single']/li[3]//span/label[contains(.,'No')]
+    Scroll down
     Click Element    xpath=.//ul[@id='medicalform-single']/li[4]//span/label[@for='tmdregularno']
     Click Element    xpath=.//ul[@id='medicalform-single']/li[5]//span/label[contains(.,'No')]
     Click Element    xpath=.//ul[@id='medicalform-single']/li[6]//span/label[contains(.,'No')]
