@@ -16,6 +16,24 @@ ${pincode}        600988
 ${height_val}     115
 ${weight_val}     40
 
+*** Keywords ***
+Jenkins browser launch
+    Set Selenium Speed    1s
+    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${chrome_options}   add_argument    headless
+    Call Method    ${chrome_options}   add_argument    disable-gpu
+    Call Method    ${chrome_options}   add_argument    no-sandbox
+    Create WebDriver  Chrome  chrome_options=${chrome_options}
+    Go To    ${Baseurl}
+    Maximize Browser Window
+    Set Browser Implicit Wait    15s
+    
+Local browser launch
+    # Set Selenium Speed    1s
+    Open Browser     ${Baseurl}    chrome
+    Maximize Browser Window
+    Set Browser Implicit Wait    15s
+
 *** Test Cases ***
 1 Adult with STP-Age 18
     Jenkins browser launch
@@ -1780,21 +1798,4 @@ Individual with STP case 70 age,1.5lakhs and son
     ${quote_id}=    Get Text    xpath=(.//table[@class='table back-tab-res']//tr)[2]/td[2]
     Log    QuoteID is    ${quote_id}
     Close All Browsers
-
-*** Keywords ***
-Jenkins browser launch
-    Set Selenium Implicit Wait    40s
-    Set Selenium Speed    1s
-    ${chrome_options} =    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    Call Method    ${chrome_options}    add_argument    headless
-    Call Method    ${chrome_options}    add_argument    disable-gpu
-    Call Method    ${chrome_options}    add_argument    no-sandbox
-    Create WebDriver    Chrome    chrome_options=${chrome_options}
-    Go To    ${url}
-    Maximize Browser Window
-
-Local browser launch
-    Open Browser    ${url}    ${browser}
-    Maximize Browser Window
-    Set Selenium Implicit Wait    40s
-    Set Selenium Speed    1s
+    
