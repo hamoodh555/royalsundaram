@@ -88,9 +88,8 @@ Scroll down
     Input Text    xpath=.//ul[@id='insuredform-single']/li//div[@class='formfieldHolder']/div/div//input[@name='weight1']    ${weight_val}
     Click Element    id=insuredetailsubmit
     Click Element    xpath=.//ul[@id='medicalform-single']/li[1]//span/label[@for='consultedDoctorno']
-        SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 300)
     Click Element    xpath=.//ul[@id='medicalform-single']/li[2]//span/label[contains(.,'No')]
-    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 600)
+    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 400)
     Click Element    xpath=.//ul[@id='medicalform-single']/li[3]//span/label[contains(.,'No')]
     Click Element    xpath=.//ul[@id='medicalform-single']/li[4]//span/label[@for='tmdregularno']
     Click Element    xpath=.//ul[@id='medicalform-single']/li[5]//span/label[contains(.,'No')]
