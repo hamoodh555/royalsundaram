@@ -26,7 +26,7 @@ Jenkins browser launch
     Create WebDriver  Chrome  chrome_options=${chrome_options}
     SeleniumLibrary.Set Window Size    1920    1080
     Go To    ${Baseurl}
-    Maximize Browser Window
+    #Maximize Browser Window
     Set Browser Implicit Wait    15s
     
 Local browser launch
