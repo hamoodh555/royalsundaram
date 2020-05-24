@@ -2,7 +2,7 @@
 Library           SeleniumLibrary
 
 *** Variables ***
-${url}            http://10.100.20.34:9190/web/guest/asquote
+${Baseurl}            http://10.100.20.34:9190/web/guest/asquote
 ${browser}        chrome
 ${Prospername}    Rajesh
 ${MobileNumber}    9000080901
