@@ -98,7 +98,7 @@ Scroll down
     Click Element    xpath=.//ul[@id='medicalform-single']/li[6]//span/label[contains(.,'No')]
     Scroll down
     Click Element    id=medicaldetailsubmit
-    Scroll down
+    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 500)
     Click Element    xpath=.//ul[@id='lifestyleform-single']/li[1]//span/label[@for='alcoholno']
     Click Element    xpath=.//ul[@id='lifestyleform-single']/li[4]//span/label[contains(.,'No')]
     Click Element    xpath=.//ul[@id='lifestyleform-single']/li[7]//span/label[contains(.,'No')]
