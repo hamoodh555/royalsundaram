@@ -89,9 +89,8 @@ Scroll down
     Click Element    id=insuredetailsubmit
     Click Element    xpath=.//ul[@id='medicalform-single']/li[1]//span/label[@for='consultedDoctorno']
     Click Element    xpath=.//ul[@id='medicalform-single']/li[2]//span/label[contains(.,'No')]
-    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 900)
+    SeleniumLibrary.Execute JavaScript    window.scrollTo(0, 600)
     Click Element    xpath=.//ul[@id='medicalform-single']/li[3]//span/label[contains(.,'No')]
-    Scroll down
     Click Element    xpath=.//ul[@id='medicalform-single']/li[4]//span/label[@for='tmdregularno']
     Click Element    xpath=.//ul[@id='medicalform-single']/li[5]//span/label[contains(.,'No')]
     Click Element    xpath=.//ul[@id='medicalform-single']/li[6]//span/label[contains(.,'No')]
