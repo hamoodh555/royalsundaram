@@ -200,7 +200,7 @@ Click lifestyle button
    
 *** Test Cases ***
     
-2 Adult STP-Sum Insured 2 lakhs
+STP – Family Floater with 2 Adults
     [Documentation]    Sum Insured 2 lakhs
     Jenkins browser launch
     # Local browser launch
@@ -342,8 +342,9 @@ Click lifestyle button
     Handle declaration and Terms and Condition
     Handle Payment Details
     Close Browser
+    
          
-2 Adult NON-STP-Sum Insured 3 lakhs
+NSTP – Family Floater with 2 Adults with Sum Insured above 2.5 Lakhs
     [Documentation]    Sum Insured 3 lakhs
     # Local browser launch
     Jenkins browser launch
@@ -485,7 +486,7 @@ Click lifestyle button
     Handle Payment Details
     Close Browser
        
-2 Adult STP-Proposer Age 36
+STP – Family Floater with 2 Adults with Self and Son
     [Documentation]    Proposer Age-36
     # Local browser launch
     Jenkins browser launch
@@ -628,7 +629,7 @@ Click lifestyle button
     Handle declaration and Terms and Condition
     Handle Payment Details
         
-2 Adult NON-STP-Proposer Age 36
+NSTP – Family Floater with 2 Adults with Sum Insured above 2.5 Lakhs and Medical Question as Yes
     [Documentation]    Medical Question is Yes
     Local browser launch
     Choose the Cover Type
@@ -776,7 +777,7 @@ Click lifestyle button
         
 
     
-2 Adult and 1 Child with STP
+STP – Family Floater with 2 Adults and 1 Child
     Jenkins browser launch
     # Local browser launch
     Choose the Cover Type
@@ -808,7 +809,7 @@ Click lifestyle button
     Click the Proceed button in model pop
     Close Browser
     
-2 Adult and 1 Child with NON-STP
+NSTP – Family Floater with 2 Adults and 1 Child with Cover all Child as No
     # Local browser launch
     Jenkins browser launch
     Choose the Cover Type
@@ -840,7 +841,7 @@ Click lifestyle button
     Click the Proceed button in model pop
     Close Browser
     
-2 Adult and 2 Child NON-STP
+NSTP – Family Floater with 2 Adults and 2 Child with age above 51
     # Local browser launch
     Jenkins browser launch
     Choose the Cover Type
@@ -883,7 +884,7 @@ Click lifestyle button
     Click the Proceed button in model pop
     Close Browser
     
-3 Adult STP
+STP – Family Floater with 3 Adults
     Jenkins browser launch
     Choose the Cover Type
     Name of Proposer
@@ -917,7 +918,7 @@ Click lifestyle button
     Click the Proceed button in model pop
     Close Browser
     
-4 Adult STP
+STP – Family Floater with 4 Adults
     # Local browser launch
     Jenkins browser launch
     Choose the Cover Type
@@ -953,7 +954,7 @@ Click lifestyle button
     Click the Proceed button in model pop
     Close Browser
     
-5 Adult NON-STP
+NSTP – Family Floater with 5 Adults with age above 51
     # Local browser launch
     Jenkins browser launch
     Choose the Cover Type
