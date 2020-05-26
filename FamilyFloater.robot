@@ -7,7 +7,7 @@ ${Baseurl}    http://10.100.20.34:9190/web/guest/asquote
 ${Proposername}    Proposer First name
 ${MobileNumber}  9874563210
 ${EmailID}    qcteam1@xerago.mail
-${Lastname}    Proposer Last Name
+${Lastname}    Proposer Last name
 ${OTP}    123456
 
 *** Keywords ***
