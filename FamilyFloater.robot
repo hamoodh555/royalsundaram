@@ -12,7 +12,7 @@ ${OTP}    123456
 
 *** Keywords ***
 Jenkins browser launch
-    Set Selenium Speed    1s
+    
     ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${chrome_options}   add_argument    headless
     Call Method    ${chrome_options}   add_argument    disable-gpu
