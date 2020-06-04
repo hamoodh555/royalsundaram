@@ -41,7 +41,7 @@ Scroll down
     SeleniumLibrary.Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     
 *** Test Cases ***
-1 Adult with STP-Age 18
+STP-basic individual flow
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -138,7 +138,7 @@ Scroll down
     Log    ${QUOTEID_C}
     Close Browser
    
-1 Adult with NON-STP-Age 51
+NSTP-Individual case with age 51
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -232,7 +232,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 25
+NSTP-Individual case with Sum Insured above 2.5 Lakhs
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -325,7 +325,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 30
+NSTP-Individual case with Medical question as Yes
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -431,7 +431,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 50
+NSTP-Individual case with BMI above 33
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -525,7 +525,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with STP-Age 65
+STP-Individual flow with Spouse as Insured
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -620,7 +620,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 67
+NSTP-Individual case with Spouse and age 51 
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -716,7 +716,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 80
+NSTP-Individual case with Spouse and Sum Insured above 2.5 Lakhs
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -812,7 +812,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 96
+NSTP-Individual case with Spouse and Medical question as Yes
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -920,7 +920,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with NON-STP-Age 70
+NSTP-Individual case with Spouse and BMI above 33
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1016,7 +1016,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-1 Adult with STP-Age 65 with Daughter
+STP-Individual flow with Daughter as Insured
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1112,7 +1112,7 @@ Scroll down
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 80 age and 3lakhs and daughter
+NSTP-Individual case with Daughter and Sum Insured above 2.5 Lakhs
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1208,7 +1208,7 @@ Individual with STP case 80 age and 3lakhs and daughter
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 96 age ,2.5lakhs and daughter
+NSTP-Individual case with Daughter and Medical question as Yes
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1316,7 +1316,7 @@ Individual with STP case 96 age ,2.5lakhs and daughter
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 70 age ,1.5lakhs and daughter
+NSTP-Individual case with Daughter and BMI above 33
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1412,7 +1412,7 @@ Individual with STP case 70 age ,1.5lakhs and daughter
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 65 age and 1lakhs and son
+STP-Individual flow with Son as Insured
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1508,7 +1508,7 @@ Individual with STP case 65 age and 1lakhs and son
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 80 age and 3lakhs and son
+NSTP-Individual case with Son and Sum Insured above 2.5 Lakhs
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1611,7 +1611,7 @@ Individual with STP case 80 age and 3lakhs and son
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 96 age ,2.5lakhs and Son
+NSTP-Individual case with Son and Medical question as Yes
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
@@ -1719,7 +1719,7 @@ Individual with STP case 96 age ,2.5lakhs and Son
     Log    QuoteID is    ${quote_id}
     Close Browser
 
-Individual with STP case 70 age,1.5lakhs and son
+NSTP-Individual case with Son and BMI above 33
     Jenkins browser launch
     #Local browser launch
     Click Element    xpath=.//div[@class='individualRadio coverageradio bigradiobutton']
